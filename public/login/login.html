@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="logo-container" data-aos="fade-in" data-aos-duration="3000ms">
+        <img src=" /img/emojione_books.png" alt="Logo">
+    </div>
+    <div class="login-container" data-aos="fade-up" data-aos-duration="3000ms">
+        <p class="text"><span>Home </span> / Login</p>
+        <h3>Login</h3>
+        <p>Input your username and password.</p>
+        <form id="loginForm">
+            <h5>Username</h5>
+            <input type="text" id="username" placeholder="Username" required>
+            <h5>Password</h5>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="login" type="login">Login</button>
+        </form>
+    </div>
+    <div class="bawah" data-aos="fade-in" data-aos-duration="3000ms">
+        <p class="regis">Don't have an account? <a href="/register/register.html">Create one!</a></p>
+        <footer>
+            &copy; 2024 Perpustakaan Online. All rights reserved.
+        </footer>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

@@ -1,0 +1,248 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    /* position: relative; */
+    padding: 30px 100px 100px;
+}
+
+.hero-section .bgblue {
+    position: absolute;
+    top: 0;
+    left: 600px;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensures the image stays behind other content */
+}
+
+.hero-section .bgblue img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Top Bar (Header dalam Hero SectiFon) */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.jumbotron h1{
+    color: rgb(2, 72, 102);
+}
+body{
+    background-color: rgb(242, 239, 240);
+}
+img{
+    width: calc(100% - 20px);
+    height: 250px;
+    margin: 10px;
+}
+.NewsGrid{
+    margin: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+.container-fluid{
+    width: 90%;
+
+}
+
+.footer {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 35px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-top: 70px;
+}
+
+.footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 50px;
+    margin-right: 150px;
+    padding-right: 150px;
+    border-right: 1px solid #000;
+}
+.gbrinfo{
+    width: 100px;
+    width: 100px;
+    padding-bottom: 50px;
+}
+.phone-info {
+    display: flex;
+    align-items: center;  /* Menyusun gambar dan teks sejajar secara vertikal */
+    gap: 10px;  /* Menambahkan jarak antara gambar dan teks */
+}
+
+.phone-icon {
+    width: 20px; /* Ukuran gambar */
+    height: 20px; /* Ukuran gambar */
+}
+
+.email-info {
+    display: flex;
+    align-items: center;  /* Menyusun gambar dan teks sejajar secara vertikal */
+    gap: 10px;  /* Menambahkan jarak antara gambar dan teks */
+}
+
+.email-icon {
+    width: 20px; /* Ukuran gambar */
+    height: 20px; /* Ukuran gambar */
+}
+
+.lokasi-info {
+    display: flex;
+    align-items: center;  /* Menyusun gambar dan teks sejajar secara vertikal */
+    gap: 10px;  /* Menambahkan jarak antara gambar dan teks */
+}
+
+.lokasi-icon {
+    width: 20px;
+    height: 20px;
+}
+
+textarea {
+    width: 100%; /* Menggunakan lebar penuh */
+    max-width: 500px; /* Batas maksimum lebar */
+    min-height: 100px; /* Tinggi minimum */
+    padding: 10px; /* Ruang dalam */
+    border: 1px solid #ccc; /* Border abu-abu */
+    border-radius: 5px; /* Sudut membulat */
+    font-size: 16px; /* Ukuran font */
+    resize: vertical; /* Hanya bisa diubah tinggi */
+    box-sizing: border-box; /* Hitung padding dalam lebar */
+}
+
+/* Style untuk tombol */
+.submit-button {
+    margin-top: 10px;
+    width: 100%; /* Lebar penuh */
+    max-width: 200px; /* Batas maksimum lebar */
+    padding: 10px 20px; /* Ruang dalam */
+    font-size: 16px; /* Ukuran font */
+    color: #fff; /* Warna teks */
+    background-color: #007BFF; /* Warna biru */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Ubah kursor jadi pointer */
+    transition: background-color 0.3s ease; /* Efek transisi */
+}
+
+/* Hover efek untuk tombol */
+.submit-button:hover {
+    background-color: #0056b3; /* Biru lebih gelap */
+}
+/* form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    color: #0000FF;
+}
+
+.contact-form p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.contact-form button {
+    padding: 10px 5px; /* Mengurangi padding untuk ukuran lebih kecil */
+    background-color: #3E3BEE;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Membuat tombol berbentuk oval */
+    font-size: 14px; /* Mengurangi ukuran font */
+    cursor: pointer;
+    margin-top: 10px;
+    width: auto; /* Lebar disesuaikan dengan panjang teks */
+    max-width: 150px;/* Mengatur lebar tombol sesuai isi teks */
+    text-align: center;
+}
+
+.contact-form button:hover {
+    background-color: #005bb5;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #003366;
+}
+
+.copyright-info {
+    background-color: #4475F2; /* Warna biru seperti pada gambar */
+    color: white; /* Warna teks putih */
+    display: flex;
+    justify-content: center; /* Membuat konten terpisah */
+    align-items: center; /* Memastikan konten vertikal rata tengah */
+    padding: 40px 50px; /* Memberikan padding kiri dan kanan */
+}
+
+.copyright-info p {
+    margin: 0;
+    text-align: center;
+}
+
+.copyright-size {
+    font-size: 14px;
+    color: #00bfff; /* Warna biru muda untuk ukuran */
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 20px;
+    }
+
+    .hero-section .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section .hero .text {
+        max-width: 100%;
+    }
+
+    .books {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+}

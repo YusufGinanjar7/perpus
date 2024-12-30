@@ -1,0 +1,487 @@
+/* Global Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* Hero Section Styling */
+.hero-section .bgblue {
+    position: absolute;
+    top: 0;
+    left: 600px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hero-section .bgblue img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Top Bar (Header) */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 100px;
+}
+
+.top-bar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-bar .logo img {
+    height: 50px;
+    width: auto;
+}
+
+.top-bar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.top-bar nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.top-bar nav a:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.top-bar .user-menu select {
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #5533FF;
+}
+
+/* Main Content Container */
+.container {
+    padding: 100px;
+    background-color: #f7f7f7;
+    display: flex; /* Horizontal layout */
+    gap: 20px; /* Spacing between image and text */
+}
+
+.sinopsis-buku {
+    margin-left: 100px;
+}
+
+.cover img {
+    height: 500px;
+}
+
+.judul {
+    padding-bottom: 30px;
+}
+
+.judul p, h2 {
+    margin: 5px;
+}
+
+.judul h2 {
+    font-size: 32px;
+}
+
+.wishlist {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin: 2px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.deskripsi {
+    margin-bottom: 30px;
+}
+
+.deskripsi h3, p {
+    margin: 7px;
+}
+
+.sinopsis {
+    margin-bottom: 30px;
+}
+
+.sinopsis h3, p {
+    margin: 7px;
+}
+
+.pinjam button {
+    padding: 10px 15px;
+    border: none;
+    background-color: white;
+    color: #3b82f6;
+    border-radius: 50px;
+    border: 1px solid #3b82f6;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pinjam button:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .top-bar {
+        margin: 20px 50px;
+    }
+
+    .container {
+        padding: 50px;
+        gap: 15px;
+    }
+
+    .sinopsis-buku {
+        margin-left: 50px;
+    }
+
+    .cover img {
+        height: 400px;
+    }
+
+    .judul h2 {
+        font-size: 28px;
+    }
+
+    .pinjam button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin: 20px 30px;
+    }
+
+    .top-bar nav {
+        gap: 15px;
+    }
+
+    .container {
+        flex-direction: column; /* Layout berubah menjadi vertikal */
+        align-items: center;
+        padding: 30px;
+    }
+
+    .sinopsis-buku {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .cover img {
+        height: 300px;
+    }
+
+    .judul h2 {
+        font-size: 24px;
+    }
+
+    .pinjam button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar {
+        margin: 10px 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .cover img {
+        height: 250px;
+    }
+
+    .judul h2 {
+        font-size: 20px;
+    }
+
+    .pinjam button {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+}
+
+
+
+.footer {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 35px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-top: 70px;
+}
+
+.footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 50px;
+    margin-right: 150px;
+    padding-right: 150px;
+    border-right: 1px solid #000;
+}
+.gbrinfo{
+    width: 100px;
+    width: 100px;
+    padding-bottom: 50px;
+}
+.phone-info {
+    display: flex;
+    align-items: center;  /* Menyusun gambar dan teks sejajar secara vertikal */
+    gap: 10px;  /* Menambahkan jarak antara gambar dan teks */
+}
+
+.phone-icon {
+    width: 20px; /* Ukuran gambar */
+    height: 20px; /* Ukuran gambar */
+}
+
+.email-info {
+    display: flex;
+    align-items: center;  /* Menyusun gambar dan teks sejajar secara vertikal */
+    gap: 10px;  /* Menambahkan jarak antara gambar dan teks */
+}
+
+.email-icon {
+    width: 20px; /* Ukuran gambar */
+    height: 20px; /* Ukuran gambar */
+}
+
+.lokasi-info {
+    display: flex;
+    align-items: center;  /* Menyusun gambar dan teks sejajar secara vertikal */
+    gap: 10px;  /* Menambahkan jarak antara gambar dan teks */
+}
+
+.lokasi-icon {
+    width: 20px; 
+    height: 20px;
+}
+
+
+/* form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    color: #0000FF;
+}
+
+.contact-form p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.contact-form button {
+    padding: 10px 5px; /* Mengurangi padding untuk ukuran lebih kecil */
+    background-color: #3E3BEE;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Membuat tombol berbentuk oval */
+    font-size: 14px; /* Mengurangi ukuran font */
+    cursor: pointer;
+    margin-top: 10px;
+    width: auto; /* Lebar disesuaikan dengan panjang teks */
+    max-width: 150px;/* Mengatur lebar tombol sesuai isi teks */
+    text-align: center;
+}
+
+.contact-form button:hover {
+    background-color: #005bb5;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #003366;
+}
+
+.copyright-info {
+    background-color: #4475F2; /* Warna biru seperti pada gambar */
+    color: white; /* Warna teks putih */
+    display: flex;
+    justify-content: center; /* Membuat konten terpisah */
+    align-items: center; /* Memastikan konten vertikal rata tengah */
+    padding: 40px 50px; /* Memberikan padding kiri dan kanan */
+}
+
+.copyright-info p {
+    margin: 0;
+    text-align: center;
+}
+
+.copyright-size {
+    font-size: 14px;
+    color: #00bfff; /* Warna biru muda untuk ukuran */
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero .text {
+        max-width: 100%;
+    }
+    .hero .books {
+        justify-content: center;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .contact-form {
+        max-width: 100%;
+    }
+}
+
+/* Untuk layar kecil (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero-section .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .hero-section .hero .text {
+        max-width: 100%;
+    }
+    .hero-section .hero .search-bar {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .hero-section .hero .search-bar input {
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px; /* Menambah jarak bawah */
+    }
+    .hero-section .hero .search-bar button {
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Books Section */
+    .book-section .books {
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .book-section .book {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .footer .contact-info {
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .footer .contact-form {
+        width: 100%;
+    }
+
+    /* Navbar */
+    .hero-section nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-section nav a {
+        padding: 8px;
+    }
+}
+
+/* Untuk layar sangat kecil (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-section .hero h1 {
+        font-size: 28px;  /* Mengurangi ukuran font h1 */
+    }
+    .hero-section .hero p {
+        font-size: 14px;
+    }
+    .hero-section .hero .search-bar input {
+        font-size: 14px;
+    }
+    .hero-section .hero .search-bar button {
+        font-size: 14px;
+    }
+
+    /* Books Section */
+    .book-section .book img {
+        width: 100px;
+        height: 140px;
+    }
+
+    /* Footer */
+    .footer .contact-info {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+    }
+
+    /* Form Adjustments */
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .contact-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+

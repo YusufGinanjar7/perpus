@@ -1,0 +1,184 @@
+/* Reset and General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    background-color: #346BD6; /* Warna biru */
+    color: white;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a i {
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2A6CBF;
+}
+
+.sidebar ul li.active a {
+    background-color: white;
+    color: #346BD6;
+    font-weight: bold;
+}
+
+/* Content Area */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow: auto;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.search-wrapper {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+}
+
+.search-btn {
+    background-color: #346BD6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #2751A4;
+}
+
+.category-select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+/* Table Styling */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-table th, .transaction-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.transaction-table th {
+    background-color: #f4f4f4;
+}
+
+.transaction-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Table Column Widths */
+.transaction-table td:last-child {
+    text-align: center;
+}
+
+/* Action Buttons */
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 6px 9px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #346BD6;
+    width: 70px;
+}
+
+.edit-btn:hover {
+    background-color: #2751A4;
+}
+
+.delete-btn {
+    background-color: #DC3545;
+    width: 70px;
+}
+
+.delete-btn:hover {
+    background-color: #A52733;
+}
+
+.action-btn i {
+    font-size: 14px;
+}

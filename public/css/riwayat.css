@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+    width: 100%;
+  }
+
+.icon {
+    text-decoration: none; /* Hilangkan underline */
+    color: inherit; /* Warna teks mengikuti konteks */
+    display: flex; /* Untuk memastikan icon dan teks tersusun dengan baik */
+    align-items: center;
+}
+.icon:hover {
+    text-decoration: none; /* Pastikan tetap tidak ada underline saat hover */
+}
+
+/* Styling untuk tombol filter */
+button[type="submit"] {
+    background-color: #4475F2;  /* Warna tombol biru */
+    color: white;  /* Warna teks putih */
+    padding: 10px 20px;  /* Ukuran tombol sedikit diperbesar */
+    font-size: 16px;  /* Ukuran font sedikit lebih besar */
+    border: none;  /* Menghilangkan border default */
+    border-radius: 5px;  /* Membuat sudut tombol sedikit melengkung */
+    cursor: pointer;  /* Menambahkan cursor pointer saat hover */
+    transition: background-color 0.3s ease;  /* Efek transisi saat hover */
+}
+
+/* Efek saat tombol dihover */
+button[type="submit"]:hover {
+    background-color: #365D9A;  /* Warna tombol berubah saat hover */
+}
+
+
+header {
+    grid-column: 1 / -1;
+    background: #4475F2;;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+   
+}
+  .header-left h1 {
+    margin-left: 20px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+/* Content Styles */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow: auto; /* Mencegah konten memotong */
+}
+
+
+.search-bar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Jarak antar elemen */
+    margin-bottom: 20px; /* Jarak dari tabel */
+}
+
+.search-wrapper {
+    display: flex;
+    flex: 1; 
+    max-width: 600px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+}
+
+.search-btn {
+    background-color: #346BD6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #2751A4;
+}
+
+.category-select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 150px; /* Ukuran minimal kategori */
+}
+
+/* Table Styles */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th, .user-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-table th {
+    background-color: #f4f4f4;
+}
+
+.user-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Content Area */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow: auto;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.search-wrapper {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+}
+
+.search-btn {
+    background-color: #346BD6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #2751A4;
+}
+
+.category-select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+/* Table Styling */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-table th, .transaction-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.transaction-table th {
+    background-color: #f4f4f4;
+}
+
+.transaction-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Table Column Widths */
+.transaction-table td:last-child {
+    text-align: center;
+}
+
+/* Action Buttons */
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 6px 9px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.sukses-btn {
+    background-color: #27c53f;
+    width: 70px;
+}
+
+.sukses-btn:hover {
+    background-color: #235b2c;
+}
+
+.gagal-btn {
+    background-color: #DC3545;
+    width: 70px; 
+}
+
+.gagal-btn:hover {
+    background-color: #A52733;
+}
+
+.sidebar {
+    position: absolute; /* Tetap di kiri tanpa mengganggu layout lainnya */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60px;
+    background-color: #4475F2;
+    width: 60px;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    overflow: hidden;
+    position: relative; /* Tambahkan relative positioning */
+}
+
+.sidebar.expanded {
+    width: 240px; /* Lebar mode lebar */
+}
+
+.sidebar .icon {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Menyelaraskan secara vertikal */
+    justify-content: center; /* Menyelaraskan secara horizontal */
+    gap: 15px;
+    width: 100%;
+}
+
+.sidebar .profile {
+    margin-top: auto; /* Pastikan elemen terdorong ke bawah */
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    gap: 15px;
+}
+
+.sidebar .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar.expanded .profile {
+    justify-content: flex-start; /* Saat diperluas, teks rata kiri */
+}
+
+.sidebar .profile .textSidebar {
+    display: none; /* Sembunyikan teks saat sidebar dalam mode kompak */
+    font-size: 16px;
+}
+
+.sidebar.expanded .profile span {
+    display: inline; /* Tampilkan teks saat sidebar diperluas */
+}
+
+.sidebar .logout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0; /* Hilangkan jarak margin */
+    gap: 0;
+    padding: 10px 0;
+}
+
+.sidebar.expanded .logout {
+    justify-content: flex-start; /* Saat diperluas, teks rata kiri */
+}
+
+.sidebar .logout .textSidebar {
+    display: none; /* Sembunyikan teks saat sidebar dalam mode kompak */
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.sidebar.expanded .logout span {
+    display: inline; /* Tampilkan teks saat sidebar diperluas */
+}
+
+.sidebar .p img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar.expanded .icon .textSidebar {
+    display: inline; /* Tampilkan teks ikon saat diperluas */
+}
+
+.sidebar .icon .textSidebar {
+    display: none; /* Sembunyikan teks ikon di mode kompak */
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.sidebar.expanded .icon {
+    justify-content: flex-start; /* Ratakan ikon dan teks ke kiri */
+    padding-left: 80px;
+}
+
+/* Sembunyikan ikon 'keyboard_double_arrow_left' saat sidebar dalam kondisi kompak */
+.sidebar .toggle-icon {
+    display: none;
+}
+
+/* Tampilkan ikon 'keyboard_double_arrow_left' saat sidebar diperluas */
+.sidebar.expanded #toggleIconExpanded {
+    display: inline-block;
+}
+
+/* Tampilkan ikon 'keyboard_double_arrow_right' saat sidebar dalam mode kompak */
+.sidebar #toggleIcon {
+    display: inline-block;
+}

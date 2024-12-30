@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px; /* Ukuran lebih ramping */
+    background-color: #346BD6;
+    color: white;
+    padding: 20px 15px; /* Padding lebih proporsional */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Elemen di tengah */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sedikit bayangan */
+}
+
+.sidebar h2 {
+    margin: 0 0 20px 0; /* Jarak lebih rapi */
+    font-size: 1.7rem; /* Ukuran lebih kecil */
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    width: 100%; /* Agar link penuh */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a i {
+    font-size: 16px; /* Ikon lebih kecil */
+}
+
+.sidebar ul li a:hover {
+    background-color: #2A6CBF;
+}
+
+.sidebar ul li.active a {
+    background-color: white;
+    color: #346BD6;
+    font-weight: bold;
+}
+
+
+/* Content Styles */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.content h1 {
+   color: #346BD6;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    flex: 1;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #346BD6;
+    transform: scale(1.05);
+}
+
+.stat p {
+    margin: 0;
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Table Styles */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-table th,
+.task-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-table th {
+    background-color: #f4f4f4;
+}
+
+.task-table .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.status.overdue {
+    background-color: #dc3545;
+    color: white;
+}
+
+.status.in-progress {
+    background-color: #ffc107;
+    color: black;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.status.returned {
+    background-color: #28a745; /* Hijau */
+}

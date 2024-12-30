@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="icon">
+            <span class="material-symbols-outlined" id="toggleIcon">keyboard_double_arrow_right</span>
+            <span class="material-symbols-outlined toggle-icon"
+                id="toggleIconExpanded">keyboard_double_arrow_left</span>
+            <span class="textSidebar"></span>
+        </div>
+        <div class="icon" id="person">
+            <span class="material-symbols-outlined">person</span>
+            <span class="textSidebar">Profil</span>
+        </div>
+        <div class="icon" id="dashboard">
+            <span class="material-symbols-outlined">dashboard</span>
+            <span class="textSidebar">Halaman Utama</span>
+        </div>
+        <div class="icon" id="history">
+            <span class="material-symbols-outlined">History</span>
+            <span class="textSidebar">History</span>
+        </div>
+        <div class="icon" id="logout">
+            <span class="material-symbols-outlined">logout</span>
+            <span class="textSidebar">Logout</span>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>Welcome, Amanda</h1>
+            </div>
+            <div class="header-right">
+                <p>Tue, 07 June 2022</p>
+                <div class="profile-pic"></div>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="profile">
+                <div class="profile-header">
+                    <img src="https://via.placeholder.com/100" alt="User" class="avatar">
+                    <div class="profile-info">
+                        <h2>Yassar</h2>
+                        <p>yassar@gmail.com</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-save">Save</button>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="left">
+                        <label for="fullname">Full Name</label>
+                        <input type="fullname" id="fullname" placeholder="Enter your Full Name" required>
+
+                        <label for="username">Username</label>
+                        <input type="username" id="username" placeholder="Enter your Username" required>
+                    </div>
+                    <div class="right">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="phonenumber" id="phonenumber" placeholder="Enter your Phone Number" required>
+
+                        <label for="address">Address</label>
+                        <input type="address" id="address" placeholder="Enter your Address" required>
+                    </div>
+                </div>
+        </main>
+    </div>
+    <script src="profil.js"></script>
+</body>
+
+</html>

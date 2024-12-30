@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinjam Buku</title>
+    <link rel="stylesheet" href="pinjambuku.css">
+    <link rel="stylesheet" href="pinjambuku.js">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <section class="pinjambuku" data-aos="fade-in">
+        <h2>Pinjam Buku</h2>
+    </section>
+
+    <section class="pinjam-container" data-aos="fade-up" data-aos-duration="3000ms">
+        <div class="pinjam">
+            <p class="text"><span>Home </span> / Pinjam Buku</p>
+            <h3>Pinjam Buku</h3>
+            <p>Input your full name, username, phone number and password.</p>
+            <div class="form-container">
+                <div class="left">
+                    <label for="name">Name</label>
+                    <input type="name" id="name" placeholder="Masukkan Nama" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan Email" required>
+
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="phonenumber" id="phonenumber" placeholder="Masukkan Nomor telpon" required>
+
+                    <label for="judulauthor">Judul Buku - Author</label>
+                    <input type="judulauthor" id="judulauthor" placeholder="Masukkan Judul Buku" required>
+
+                    <label for="tanggalpinjam">Tanggal Peminjaman</label>
+                    <input type="tanggalpinjam" id="tanggalpinjam" placeholder="Masukkan Tanggal Peminjaman" required>
+                </div>
+
+                <!-- <div class="right">
+                    <label for="tanggalkembali">Tanggal Pengembalian</label>
+                    <input type="tanggalkembali" id="tanggalkembali" placeholder="Masukkan Tanggal Pengembalian"
+                        required>
+
+                    <label for="durasi">Durasi Peminjaman</label>
+                    <input type="durasi" id="durasi" placeholder="Masukkan Durasi Peminjaman" required>
+                </div> -->
+            </div>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="terms" />
+            <label for="terms">I agree to the <a href="/terms/terms.html">terms and conditions</a></label>
+        </div>
+        <!-- ini capthca yaapss-->
+        <!-- <div class="cf-turnstile" data-sitekey="yourSitekey" data-callback="javascriptCallback"></div> -->
+        <button id="submitBtn" disabled>Submit</button>
+
+        <!-- <div class="captcha-container">
+        
+            <div id="captcha-modal" class="captcha-modal">
+                <div class="captcha-content">
+                    <span class="close-button">&times;</span>
+                    <h3>Slide to complete the puzzle</h3>
+                    <img class="captcha-background" src="/img/captcha image.png" alt="CAPTCHA Background">
+                    <canvas class="captcha-canvas" width="300" height="150"></canvas>
+                    <div class="captcha-slider">
+                        <input type="range" id="captcha-slider" min="0" max="100" step="1"
+                            aria-label="Move slider to complete the puzzle">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+    </section>
+
+    <footer>
+        &copy; 2024 Perpustakaan Online. All rights reserved.
+    </footer>
+
+    <script>
+        const termsCheckbox = document.getElementById('terms');
+        const submitButton = document.getElementById('submitBtn');
+
+        termsCheckbox.addEventListener('change', function () {
+            submitButton.disabled = !this.checked;
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
